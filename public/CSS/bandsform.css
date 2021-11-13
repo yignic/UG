@@ -1,0 +1,15 @@
+form{
+    border: 2px solid greenyellow;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.form-control{
+    align-items: center;
+    border-style: none;
+
+}
+label{
+    justify-content: center;
+    align-items: center;
+}

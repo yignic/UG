@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musician</title>
+    <link rel="stylesheet" href="/public/CSS/bootstrap-css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/CSS/bandsform.css">
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container-fluid" id="nav-bar">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="/images/logo.PNG" alt="" width="160px" height="60">
+                  </a>
+                </div>
+              </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="musicians.html">Musicians</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bands.html">Bands</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Performing Artists
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="drama.html">Dramatists</a></li>
+                  <li><a class="dropdown-item" href="comedy.html">Comedians</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <!-- <li><a class="dropdown-item" href="document.html">Documentary Creators</a></li> -->
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <form action="POST" class="Band_form" id="band-form" name="bandregistration">
+            <h2>Bands's Form</h2>
+
+            <div class="form-control">
+                <label for="firstname">Name:</label><br>
+                <input class="bandname" type="text" placeholder="Band-name" name="bandname"><br>
+            </div>
+            <small id="band-error"></small>
+            <div class="form-control">
+                <label for="ownername">Owner:</label><br>
+                <input class="ownername" type="text" placeholder="owner's name" name="owner"><br>
+            </div>
+            <small id="owner-error"></small>
+            <div class="form-control">
+                <label for="bandname">Band Home:</label><br>
+                <input class="bandhome" type="text" placeholder="Band home" name="bandhome"><br>
+            </div>
+            <small id="home-error"></small>
+            <div class="form-control">
+                <label for="slogan">Slogan:</label><br>
+                <input class="slogan" type="text" placeholder="slogan" name="slogan"><br>
+            </div>
+            <small id="slogan-error"></small>
+            <div class="form-control">
+                <label for="">Icon</label>
+                <input class="icon" type="image" placeholder="Insert Band-icon" name="icon"><br>
+            </div>
+            <small id="icon-error"></small>
+            <div class="form-control">
+                <label for="sponsors">Names of sponsors:</label><br>
+                <input class="sponsors" type="text" placeholder="sponsors" name="sponsors"><br>
+            </div>
+            <small id="sponsors-error"></small>
+            <div class="form-control">
+                <label for="Date">Date of formation:</label><br>
+                <input class="DOF" type="date" placeholder="Date of formation"><br>
+            </div>
+            <small id="dof-error"></small>
+            <div class="form-control">
+                <label for="crown">Crowns :</label><br>
+                <input class="Crowns" type="text" placeholder="Crowns if Any" name="Crowns"><br>
+            </div>
+            <small id="crowns-error"></small>
+            <div class="form-control">
+                <label for="Albums">Number of Members:</label><br>
+                <input class="number" type="number"  placeholder="Number of Members" name="number"><br>
+               </div>
+               <small id="number-error"></small>
+               <div class="form-control">
+                <label for="category">Category of music:</label><br>
+                <input class="Category" type="text"  placeholder="eg kaddongo kamu, ragga"><br>
+               </div>
+               <small id="Category-error"></small>
+
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <script src="/public/js/Band-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>

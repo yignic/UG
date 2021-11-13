@@ -1,0 +1,22 @@
+.card{
+    width: 280px;
+    border-radius: 060px;
+  }
+  .card-img-top{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+ 
+  .col{
+    /* background-color: rgb(207, 238, 238); */
+    margin: 10px;
+  }
+  .container1{
+    background: aquamarine;
+  }
+  .container2{
+    background: rgb(242, 121, 173);
+  }
+  .container3{
+    background: rgb(173, 242, 139);
+  }

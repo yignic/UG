@@ -1,0 +1,31 @@
+{
+  "name": "ug-aa-mux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handler": "^0.2.0",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yignic/ug-aa-mux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yignic/ug-aa-mux/issues"
+  },
+  "homepage": "https://github.com/yignic/ug-aa-mux#readme"
+}

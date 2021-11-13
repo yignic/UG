@@ -1,0 +1,14 @@
+.container1{
+  background: rgb(64, 238, 78);
+  
+  
+}
+.card{
+  width: 300px;
+margin: 2px;
+  border-radius: 60px;
+}
+.card-img-top{
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
