@@ -42,6 +42,10 @@ const ArtistSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    icon:{
+        type: String,
+        required: true,
+    },
     id: {
         type: String,
         required: true,
@@ -51,3 +55,7 @@ const ArtistSchema = new mongoose.Schema({
         required: true,
     }
 })
+
+const ArtistModel = mongoose.model('Artist', ArtistSchema);
+
+module.exports =  ArtistModel;

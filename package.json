@@ -9,6 +9,7 @@
     "express-handler": "^0.2.0",
     "mongodb": "^4.1.4",
     "mongoose": "^6.0.12",
+    "multer": "^1.4.3",
     "pug": "^3.0.2"
   },
   "devDependencies": {

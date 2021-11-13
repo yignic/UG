@@ -41,7 +41,7 @@ nav#navbar.navbar.navbar-expand-lg.navbar-light.bg-light
         input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
         button.btn.btn-outline-success(type='submit') Search
 .container
-  form#musicians-form.Musician_form(name='musiciansregistration' action="/artistform" method="POST" )
+  form#musicians-form.Musician_form(name='musiciansregistration' action="/artistform" method="POST" enctype='multipart/form-data'  )
     h2 Artist&apos;s Form
     .form-control
       label(for='firstname') First Name:
@@ -108,6 +108,11 @@ nav#navbar.navbar.navbar-expand-lg.navbar-light.bg-light
       input.nin(type='text' placeholder='NIN' name='nin')
       br
     small#nin-error
+    .form-control
+      label(for='') Icon
+      input.icon(type='file' accept='.jpg, .jpeg, .png' name='icon')
+      br
+    small#icon-error
     .form-control
       label(for='Id') Artist ID:
       br
